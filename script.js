@@ -1,36 +1,43 @@
 document.addEventListener('DOMContentLoaded', function() {
     window.scrollTo(0, 1);
-    const moviesContainer = document.querySelector('.movies-container');
-    const prevBtn = document.querySelector('.prev-btn');
-    const nextBtn = document.querySelector('.next-btn');
+    
+    const movieContainers = document.querySelectorAll('.movies-container');
+    const prevBtns = document.querySelectorAll('.prev-btn');
+    const nextBtns = document.querySelectorAll('.next-btn');
 
-    let scrollPosition = 0;
+    for (let i = 0; i < movieContainers.length; i++) {
+        const moviesContainer = movieContainers[i];
+        const prevBtn = prevBtns[i];
+        const nextBtn = nextBtns[i];
 
-    moviesContainer.addEventListener('scroll', function() {
-        scrollPosition = moviesContainer.scrollLeft;
-        updateButtonVisibility();
-    });
+        let scrollPosition = 0;
 
-    prevBtn.addEventListener('click', function()  {
-        scrollPosition = Math.max(scrollPosition - 300, 0);
-        updateScrollPosition();
-        updateButtonVisibility();
-    });
+        moviesContainer.addEventListener('scroll', function() {
+            scrollPosition = moviesContainer.scrollLeft;
+            updateButtonVisibility(moviesContainer, prevBtn, nextBtn);
+        });
 
-    nextBtn.addEventListener('click', function() {
-        const remainingSpace = moviesContainer.scrollWidth - (scrollPosition + moviesContainer.clientWidth);
-        scrollPosition += Math.min(remainingSpace, 300);
-        updateScrollPosition();
-        updateButtonVisibility();
-    });
+        prevBtn.addEventListener('click', function()  {
+            scrollPosition = Math.max(scrollPosition - 300, 0);
+            updateScrollPosition(moviesContainer, scrollPosition);
+            updateButtonVisibility(moviesContainer, prevBtn, nextBtn);
+        });
 
-    function updateScrollPosition() {
-        moviesContainer.scrollLeft = scrollPosition;
+        nextBtn.addEventListener('click', function() {
+            const remainingSpace = moviesContainer.scrollWidth - (scrollPosition + moviesContainer.clientWidth);
+            scrollPosition += Math.min(remainingSpace, 300);
+            updateScrollPosition(moviesContainer, scrollPosition);
+            updateButtonVisibility(moviesContainer, prevBtn, nextBtn);
+        });
     }
 
-    function updateButtonVisibility() {
-        prevBtn.style.display = scrollPosition === 0 ? 'none' : 'block';
-        nextBtn.style.display = scrollPosition >= moviesContainer.scrollWidth - moviesContainer.clientWidth - 1 ? 'none' : 'block';
+    function updateScrollPosition(container, position) {
+        container.scrollLeft = position;
+    }
+
+    function updateButtonVisibility(container, prevBtn, nextBtn) {
+        prevBtn.style.display = container.scrollLeft === 0 ? 'none' : 'block';
+        nextBtn.style.display = container.scrollLeft >= container.scrollWidth - container.clientWidth - 1 ? 'none' : 'block';
     }
 
     window.addEventListener('scroll', function() {
