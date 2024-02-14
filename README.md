@@ -17,5 +17,11 @@ Marvel+ ofrece una experiencia completa para los fanáticos del Universo Cinemat
 ![screenshot-3](https://github.com/jhonatanseminario/marvel-plus/assets/146497717/0123a8ba-1d87-4edc-aa97-14676ac140c4)
 -
 ![screenshot-4](https://github.com/jhonatanseminario/marvel-plus/assets/146497717/f967cf6e-233d-4932-9606-28f880614ef1)
-
-
+--
+![a](https://github.com/jhonatanseminario/marvel-plus/assets/146497717/3cb5d13f-b44f-4942-9a9a-f66f2fc212e9)
+-
+![b](https://github.com/jhonatanseminario/marvel-plus/assets/146497717/42a421f1-676a-43c1-8bb3-427c18825987)
+-
+![c](https://github.com/jhonatanseminario/marvel-plus/assets/146497717/b29d48d9-f61b-4643-ac3e-b41115ee0cce)
+-
+![d](https://github.com/jhonatanseminario/marvel-plus/assets/146497717/65286802-43bf-427e-a251-4e721e23e90c)
