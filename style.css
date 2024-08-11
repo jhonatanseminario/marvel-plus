@@ -16,7 +16,7 @@ body {
     position: fixed;
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(to top, rgb(6, 11, 31) 16%, rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to top, rgb(6, 11, 31) 0, rgba(0, 0, 0, 0));
     z-index: -1;
 }
 
@@ -158,10 +158,6 @@ body {
 }
 
 @media screen and (max-width: 1024px) {
-    .background {
-        background-image: linear-gradient(to top, rgb(6, 11, 31) 38%, rgba(0, 0, 0, 0));
-    }
-
     .marvel-logo {
         top: 240px;
     }
@@ -204,10 +200,6 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-    .background {
-        background-image: linear-gradient(to top, rgb(6, 11, 31) 57%, rgba(0, 0, 0, 0));
-    }
-
     .marvel-logo {
         top: 180px;
         height: 120px;
@@ -247,10 +239,6 @@ body {
 }
 
 @media screen and (max-width: 540px) {
-    .background {
-        background-image: linear-gradient(to top, rgb(6, 11, 31) 61%, rgba(0, 0, 0, 0));
-    }
-
     .marvel-logo {
         top: 140px;
         height: 100px;
@@ -300,10 +288,6 @@ body {
 }
 
 @media screen and (max-width: 480px) {
-    .background {
-        background-image: linear-gradient(to top, rgb(6, 11, 31) 70%, rgba(0, 0, 0, 0));
-    }
-
     .marvel-logo {
         top: 120px;
         height: 80px;
@@ -339,10 +323,6 @@ body {
 }
 
 @media screen and (max-width: 360px) {
-    .background {
-        background-image: linear-gradient(to top, rgb(6, 11, 31) 80%, rgba(0, 0, 0, 0));
-    }
-
     .marvel-logo {
         top: 100px;
         height: 60px;
@@ -388,11 +368,5 @@ body {
     
     .cronologia-contenedor {
         top: 1700px;
-    }
-}
-
-@media screen and (max-width: 240px) {
-    .background {
-        background-image: linear-gradient(to top, rgb(6, 11, 31) 85%, rgba(0, 0, 0, 0));
     }
 }
