@@ -16,7 +16,6 @@ body {
     position: fixed;
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(to top, rgb(6, 11, 31) 0, rgba(0, 0, 0, 0));
     z-index: -1;
 }
 
@@ -26,7 +25,7 @@ body {
     animation: aparicion 3s ease;
     z-index: -2;
     transition: filter 0.2s linear;
-    mask-image: linear-gradient(0deg, rgba(255, 0, 0, 0) 0%, rgb(0, 0, 0) 20%);
+    mask-image: linear-gradient(0deg, rgba(255, 0, 0, 0) 0%, rgb(0, 0, 0) 80%);
 }
 
 @keyframes aparicion {
