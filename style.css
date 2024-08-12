@@ -19,13 +19,27 @@ body {
     z-index: -1;
 }
 
-.cover-photo {
+.photo-container {
     position: fixed;
-    width: 100vw;
-    animation: aparicion 3s ease;
     z-index: -2;
-    transition: filter 0.2s linear;
     mask-image: linear-gradient(0deg, rgba(255, 0, 0, 0) 0%, rgb(0, 0, 0) 80%);
+}
+
+.cover-photo {
+    width: 100vw;
+    animation: aparecerCircular 4s ease-in-out forwards, aparicion 4s ease;
+    mask-image: radial-gradient(circle, rgb(255, 255, 255) 0%, rgba(0, 0, 0, 0) 70%);
+    mask-size: 100%;
+    mask-position: center;
+}
+
+@keyframes aparecerCircular {
+    from {
+        mask-size: 100%;
+    }
+    to {
+        mask-size: 10000%;
+    }
 }
 
 @keyframes aparicion {
