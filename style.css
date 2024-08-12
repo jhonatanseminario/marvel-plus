@@ -27,26 +27,19 @@ body {
 
 .cover-photo {
     width: 100vw;
-    animation: aparecerCircular 4s ease-in-out forwards, aparicion 4s ease;
+    animation: aparicion 2s ease-in-out forwards;
     mask-image: radial-gradient(circle, rgb(255, 255, 255) 0%, rgba(0, 0, 0, 0) 70%);
     mask-size: 100%;
     mask-position: center;
 }
 
-@keyframes aparecerCircular {
-    from {
-        mask-size: 100%;
-    }
-    to {
-        mask-size: 10000%;
-    }
-}
-
 @keyframes aparicion {
     from {
       transform: scale(1.1);
+      mask-size: 100%;
     } to {
       transform: scale(1.0);
+      mask-size: 500%;
     }
 }
 
