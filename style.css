@@ -40,11 +40,11 @@ body {
 .marvel-logo {
     position: absolute;
     left: 50%;
-    top: 340px;
+    top: 22vw;
     transform: translateX(-50%);
     display: block;
     margin: 0 auto;
-    max-width: 100%;
+    width: 30vw;
     transform-origin: center;
     transition: transform 0.4s linear;
 }
@@ -158,10 +158,6 @@ body {
 }
 
 @media screen and (max-width: 1024px) {
-    .marvel-logo {
-        top: 240px;
-    }
-
     .title-container {
         left: 41px;
     }
@@ -199,12 +195,10 @@ body {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 720px) {
     .marvel-logo {
-        top: 180px;
-        height: 120px;
+        width: 40vw;
     }
-
     .exitos-contenedor {
         top: 360px;
     }
@@ -239,11 +233,6 @@ body {
 }
 
 @media screen and (max-width: 540px) {
-    .marvel-logo {
-        top: 140px;
-        height: 100px;
-    }
-
     .movies-container {
         padding-left: 24px;
     }
@@ -288,11 +277,6 @@ body {
 }
 
 @media screen and (max-width: 480px) {
-    .marvel-logo {
-        top: 120px;
-        height: 80px;
-    }
-
     .exitos-contenedor {
         top: 230px;
     }
@@ -323,11 +307,6 @@ body {
 }
 
 @media screen and (max-width: 360px) {
-    .marvel-logo {
-        top: 100px;
-        height: 60px;
-    }
-
     .movies-container {
         padding-left: 20px;
     }
