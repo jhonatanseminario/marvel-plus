@@ -198,6 +198,7 @@ body {
 @media screen and (max-width: 720px) {
     .marvel-logo {
         width: 40vw;
+        top: 25vw;
     }
     .exitos-contenedor {
         top: 360px;
