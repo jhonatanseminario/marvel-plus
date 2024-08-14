@@ -48,16 +48,15 @@ body {
 .marvel-logo {
     position: absolute;
     top: 22vw;
-    display: block;
     width: 30vw;
-    transition: transform 0.4s linear;
-    animation: aparicionLogo 1.5s ease-out .5s forwards;
     opacity: 0;
+    transition: transform 0.4s linear;
+    animation: aparicionLogo 1s ease-out 1s forwards;
 }
 
 @keyframes aparicionLogo {
     from {
-      transform: translateY(40px);
+      transform: translateY(32px);
       opacity: 0;
     } to {
       transform: translateY(0px);
