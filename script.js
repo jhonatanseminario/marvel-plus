@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (scrollPosition >= thresholds[i]) {
                 coverPhoto.style.filter = `brightness(${brightnessLevels[i]}%)`;
                 marvelLogo.style.filter = `opacity(${opacityLevels[i]}%)`;
-                marvelLogo.style.transform = `translateX(-50%) scale(${scaleLevels[i]})`;
+                marvelLogo.style.transform = `scale(${scaleLevels[i]})`;
                 break;
             }
         }

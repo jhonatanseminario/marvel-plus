@@ -5,6 +5,8 @@
 }
 
 body {
+    display: grid;
+    justify-items: center;
     position: relative;
     width: 100vw;
     overflow-x: hidden;
@@ -45,14 +47,22 @@ body {
 
 .marvel-logo {
     position: absolute;
-    left: 50%;
     top: 22vw;
-    transform: translateX(-50%);
     display: block;
-    margin: 0 auto;
     width: 30vw;
-    transform-origin: center;
     transition: transform 0.4s linear;
+    animation: aparicionLogo 1.5s ease-out .5s forwards;
+    opacity: 0;
+}
+
+@keyframes aparicionLogo {
+    from {
+      transform: translateY(40px);
+      opacity: 0;
+    } to {
+      transform: translateY(0px);
+      opacity: 1;
+    }
 }
 
 .exitos-contenedor {
