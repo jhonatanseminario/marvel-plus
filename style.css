@@ -66,7 +66,7 @@ body {
 
 .exitos-contenedor {
     position: absolute;
-    top: 580px;
+    top: 40vw;
     width: 100%;
 }
 
@@ -109,8 +109,8 @@ body {
 .title-container {
     position: absolute;
     top: -16px;
-    left: 73px;
-    font-size: 18px;
+    left: 48px;
+    font-size: 20px;
     color: white;
     user-select: none;
 }
@@ -124,8 +124,8 @@ body {
     width: 100%;
     transition: transform 0.4s ease;
     overflow-x: scroll;
-    padding-left: 64px;
-    padding-right: 64px;
+    padding-left: 48px;
+    padding-right: 4vw;
     scroll-behavior: smooth;
 }
 
@@ -172,51 +172,13 @@ body {
     opacity: 1;
 }
 
-@media screen and (max-width: 1024px) {
-    .title-container {
-        left: 41px;
-    }
-
-    .movies-container {
-        padding-left: 32px;
-    }
-
-    .exitos-contenedor {
-        top: 480px;
-    }
-    
-    .faseuno-contenedor {
-        top: 880px;
-    }
-    
-    .fasedos-contenedor {
-        top: 1280px;
-    }
-    
-    .fasetres-contenedor {
-        top: 1680px;
-    }
-    
-    .fasecuatro-contenedor {
-        top: 2080px;
-    }
-    
-    .fasecinco-contenedor {
-        top: 2480px;
-    }
-    
-    .cronologia-contenedor {
-        top: 2880px;
-    }
-}
-
 @media screen and (max-width: 720px) {
     .marvel-logo {
         width: 40vw;
         top: 25vw;
     }
     .exitos-contenedor {
-        top: 360px;
+        top: 45vw;
     }
     
     .faseuno-contenedor {
@@ -244,124 +206,16 @@ body {
     }
 
     .movies-container img {
-        height: 70%;
-    }
-}
-
-@media screen and (max-width: 540px) {
-    .movies-container {
-        padding-left: 24px;
-    }
-
-    .exitos-contenedor {
-        top: 280px;
-    }
-    
-    .faseuno-contenedor {
-        top: 600px;
-    }
-    
-    .fasedos-contenedor {
-        top: 920px;
-    }
-    
-    .fasetres-contenedor {
-        top: 1240px;
-    }
-    
-    .fasecuatro-contenedor {
-        top: 1560px;
-    }
-    
-    .fasecinco-contenedor {
-        top: 1880px;
-    }
-    
-    .cronologia-contenedor {
-        top: 2200px;
-    }
-
-    .movies-container img {
         height: 60%;
     }
 
-    .title-container {
-        top: 16px;
-        left: 36px;
-        font-size: 17px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .exitos-contenedor {
-        top: 230px;
-    }
-    
-    .faseuno-contenedor {
-        top: 550px;
-    }
-    
-    .fasedos-contenedor {
-        top: 870px;
-    }
-    
-    .fasetres-contenedor {
-        top: 1190px;
-    }
-    
-    .fasecuatro-contenedor {
-        top: 1510px;
-    }
-    
-    .fasecinco-contenedor {
-        top: 1830px;
-    }
-    
-    .cronologia-contenedor {
-        top: 2150px;
-    }
-}
-
-@media screen and (max-width: 360px) {
     .movies-container {
-        padding-left: 20px;
+        padding-left: 24px;;
     }
 
     .title-container {
-        top: 52px;
-        left: 32px;
         font-size: 16px;
-    }
-
-    .movies-container img {
-        height: 50%;
-    }
-
-    .exitos-contenedor {
-        top: 140px;
-    }
-    
-    .faseuno-contenedor {
-        top: 400px;
-    }
-    
-    .fasedos-contenedor {
-        top: 660px;
-    }
-    
-    .fasetres-contenedor {
-        top: 920px;
-    }
-    
-    .fasecuatro-contenedor {
-        top: 1180px;
-    }
-    
-    .fasecinco-contenedor {
-        top: 1440px;
-    }
-    
-    .cronologia-contenedor {
-        top: 1700px;
+        top: 32px;
+        left: 28px;
     }
 }
