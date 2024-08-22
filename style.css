@@ -141,6 +141,7 @@ body {
 
 .movies-container img {
     height: 80%;
+    aspect-ratio: 2 / 3;
     border-radius: 4px;
     margin: 10px;
     cursor: pointer;
