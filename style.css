@@ -230,6 +230,7 @@ body {
 
     .movies-container img {
         height: 70%;
+        margin-right: 8px;
     }
 
     .movies-container {
