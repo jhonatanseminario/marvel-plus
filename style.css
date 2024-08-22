@@ -64,45 +64,51 @@ body {
     }
 }
 
-.exitos-contenedor {
+.main-container {
     position: absolute;
     top: 40vw;
     width: 100%;
 }
 
+.exitos-contenedor {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
 .faseuno-contenedor {
     position: absolute;
-    top: 980px;
+    top: 400px;
     width: 100%;
 }
 
 .fasedos-contenedor {
     position: absolute;
-    top: 1380px;
+    top: 800px;
     width: 100%;
 }
 
 .fasetres-contenedor {
     position: absolute;
-    top: 1780px;
+    top: 1200px;
     width: 100%;
 }
 
 .fasecuatro-contenedor {
     position: absolute;
-    top: 2180px;
+    top: 1600px;
     width: 100%;
 }
 
 .fasecinco-contenedor {
     position: absolute;
-    top: 2580px;
+    top: 2000px;
     width: 100%;
 }
 
 .cronologia-contenedor {
     position: absolute;
-    top: 2980px;
+    top: 2400px;
     width: 100%;
 }
 
@@ -177,36 +183,41 @@ body {
         width: 40vw;
         top: 25vw;
     }
-    .exitos-contenedor {
+
+    .main-container {
         top: 45vw;
+    }
+
+    .exitos-contenedor {
+        top: 0px;
     }
     
     .faseuno-contenedor {
-        top: 760px;
+        top: 350px;
     }
     
     .fasedos-contenedor {
-        top: 1160px;
+        top: 700px;
     }
     
     .fasetres-contenedor {
-        top: 1560px;
+        top: 1050px;
     }
     
     .fasecuatro-contenedor {
-        top: 1960px;
+        top: 1400px;
     }
     
     .fasecinco-contenedor {
-        top: 2360px;
+        top: 1750px;
     }
     
     .cronologia-contenedor {
-        top: 2760px;
+        top: 2100px;
     }
 
     .movies-container img {
-        height: 60%;
+        height: 70%;
     }
 
     .movies-container {
@@ -215,7 +226,7 @@ body {
 
     .title-container {
         font-size: 16px;
-        top: 32px;
+        top: 16px;
         left: 28px;
     }
 }
