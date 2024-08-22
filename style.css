@@ -178,7 +178,19 @@ body {
     opacity: 1;
 }
 
+.footer {
+    position: absolute;
+    top: 2800px;
+    height: 8px;
+    width: 100%;
+}
+
 @media screen and (max-width: 720px) {
+
+    .footer {
+        display: none;
+    }
+
     .marvel-logo {
         width: 40vw;
         top: 25vw;
@@ -193,27 +205,27 @@ body {
     }
     
     .faseuno-contenedor {
-        top: 350px;
+        top: 340px;
     }
     
     .fasedos-contenedor {
-        top: 700px;
+        top: 680px;
     }
     
     .fasetres-contenedor {
-        top: 1050px;
+        top: 1020px;
     }
     
     .fasecuatro-contenedor {
-        top: 1400px;
+        top: 1360px;
     }
     
     .fasecinco-contenedor {
-        top: 1750px;
+        top: 1700px;
     }
     
     .cronologia-contenedor {
-        top: 2100px;
+        top: 2040px;
     }
 
     .movies-container img {
