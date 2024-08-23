@@ -43,6 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', function() {
         const coverPhoto = document.querySelector('.cover-photo');
         const marvelLogo = document.querySelector('.marvel-logo');
+        const logoContainer = document.querySelector('.logo-container');
 
         const scrollPosition = window.scrollY;
 
@@ -55,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (scrollPosition >= thresholds[i]) {
                 coverPhoto.style.filter = `brightness(${brightnessLevels[i]}%)`;
                 marvelLogo.style.filter = `opacity(${opacityLevels[i]}%)`;
-                marvelLogo.style.transform = `scale(${scaleLevels[i]})`;
+                logoContainer.style.transform = `scale(${scaleLevels[i]})`;
                 break;
             }
         }

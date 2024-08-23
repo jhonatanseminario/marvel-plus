@@ -45,12 +45,16 @@ body {
     }
 }
 
-.marvel-logo {
+.logo-container {
     position: absolute;
     top: 22vw;
+    transition: transform 0.4s linear;
+}
+
+
+.marvel-logo {
     width: 30vw;
     opacity: 0;
-    transition: transform 0.4s linear;
     animation: aparicionLogo 1s ease-out 1s forwards;
 }
 
