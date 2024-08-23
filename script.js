@@ -47,10 +47,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const scrollPosition = window.scrollY;
 
-        const thresholds = [0, 50, 100, 150, 200, 250, 300, 350];
-        const brightnessLevels = [100, 100, 85, 70, 55, 40, 30, 20];
-        const opacityLevels = [100, 100, 90, 80, 70, 60, 50, 40];
-        const scaleLevels = [1, 1, 0.9, 0.8, 0.7, 0.6, 0.5, 0.4];
+        const thresholds = [0, 50, 100, 150, 200, 250, 300, 350, 400];
+        const brightnessLevels = [100, 90, 80, 70, 60, 50, 40, 30, 20];
+        const opacityLevels = [100, 90, 80, 70, 60, 50, 40, 30, 20];
+        const scaleLevels = [1, 0.95, 0.9, 0.85, 0.8, 0.75, 0.7, 0.65, 0.6];
 
         for (let i = thresholds.length - 1; i >= 0; i--) {
             if (scrollPosition >= thresholds[i]) {
