@@ -164,14 +164,18 @@ body {
     border-radius: 4px;
     margin: 10px;
     cursor: pointer;
-    box-shadow: -2px 2px 20px 0 rgb(0, 0, 0, .75), 0 19px 10px -10px rgb(0, 0, 0, .75);
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    box-shadow: -2px 3px 20px 0 rgba(0,0,0,.69),0 16px 10px -10px rgba(0,0,0,.73);
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out, outline 0.3s ease-out;
     user-select: none;
+    outline: 4px solid transparent;
+    outline-offset: -4px;
 }
 
 .movies-container img:hover {
-    transform: scale(1.08);
-    box-shadow: 0 0 0 3px white;
+    transform: scale(1.05);
+    box-shadow: 1px -20px 14px -18px rgba(0,0,0,.8),2px 12px 13px -3px rgba(0,0,0,.72);
+    outline-offset: -4px;
+    outline: 4px solid white;
 }
 
 .prev-btn,
