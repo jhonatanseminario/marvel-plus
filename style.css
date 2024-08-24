@@ -21,7 +21,7 @@ body {
     z-index: -1;
 }
 
-.photo-container {
+.cover-container {
     position: fixed;
     z-index: -2;
     mask-image: linear-gradient(0deg, rgba(255, 0, 0, 0) 0%, rgb(0, 0, 0) 80%);
@@ -74,49 +74,49 @@ body {
     width: 100%;
 }
 
-.exitos-contenedor {
+.hits-container {
     position: absolute;
     top: 0;
     width: 100%;
 }
 
-.faseuno-contenedor {
+.phaseone-container {
     position: absolute;
     top: 400px;
     width: 100%;
 }
 
-.fasedos-contenedor {
+.phasetwo-container {
     position: absolute;
     top: 800px;
     width: 100%;
 }
 
-.fasetres-contenedor {
+.phasethree-container {
     position: absolute;
     top: 1200px;
     width: 100%;
 }
 
-.fasecuatro-contenedor {
+.phasefour-container {
     position: absolute;
     top: 1600px;
     width: 100%;
 }
 
-.fasecinco-contenedor {
+.phasefive-container {
     position: absolute;
     top: 2000px;
     width: 100%;
 }
 
-.cronologia-contenedor {
+.chronology-container {
     position: absolute;
     top: 2400px;
     width: 100%;
 }
 
-.title-container {
+.title {
     position: absolute;
     top: -16px;
     left: 48px;
@@ -206,31 +206,31 @@ body {
         top: 48vw;
     }
 
-    .exitos-contenedor {
+    .hits-container {
         top: 0px;
     }
     
-    .faseuno-contenedor {
+    .phaseone-container {
         top: 340px;
     }
     
-    .fasedos-contenedor {
+    .phasetwo-container {
         top: 680px;
     }
     
-    .fasetres-contenedor {
+    .phasethree-container {
         top: 1020px;
     }
     
-    .fasecuatro-contenedor {
+    .phasefour-container {
         top: 1360px;
     }
     
-    .fasecinco-contenedor {
+    .phasefive-container {
         top: 1700px;
     }
     
-    .cronologia-contenedor {
+    .chronology-container {
         top: 2040px;
     }
 
@@ -243,7 +243,7 @@ body {
         padding-left: 24px;;
     }
 
-    .title-container {
+    .title {
         font-size: 16px;
         top: 16px;
         left: 28px;
