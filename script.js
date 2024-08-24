@@ -18,14 +18,14 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         prevBtn.addEventListener('click', function()  {
-            scrollPosition = Math.max(scrollPosition - 300, 0);
+            scrollPosition = Math.max(scrollPosition - 800, 0);
             updateScrollPosition(moviesContainer, scrollPosition);
             updateButtonVisibility(moviesContainer, prevBtn, nextBtn);
         });
 
         nextBtn.addEventListener('click', function() {
             const remainingSpace = moviesContainer.scrollWidth - (scrollPosition + moviesContainer.clientWidth);
-            scrollPosition += Math.min(remainingSpace, 300);
+            scrollPosition += Math.min(remainingSpace, 800);
             updateScrollPosition(moviesContainer, scrollPosition);
             updateButtonVisibility(moviesContainer, prevBtn, nextBtn);
         });

@@ -177,20 +177,33 @@ body {
 .prev-btn,
 .next-btn {
     position: absolute;
-    top: 160px;
+    top: 37px;
     color: white;
     cursor: pointer;
     opacity: 0;
     transition: opacity 0.4s ease;
+    height: 300px;
+    width: 60px;
+    align-content: center;
+}
+
+.next-btn svg {
+    position: relative;
+    left: 8px;
+}
+
+.prev-btn svg {
+    position: relative;
+    left: 8px;
 }
 
 .prev-btn {
     display: none;
-    left: 12px;
+    left: 0px;
 }
 
 .next-btn {
-    right: 12px;
+    right: 0px;
 }
 
 .prev-btn:hover,
