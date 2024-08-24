@@ -78,42 +78,56 @@ body {
     position: absolute;
     top: 0;
     width: 100%;
+    opacity: 0;
+    animation: aparicionLogo 1s ease-out 0.5s forwards;
 }
 
 .phaseone-container {
     position: absolute;
     top: 400px;
     width: 100%;
+    opacity: 0;
+    animation: aparicionLogo 1s ease-out 0.6s forwards;
 }
 
 .phasetwo-container {
     position: absolute;
     top: 800px;
     width: 100%;
+    opacity: 0;
+    animation: aparicionLogo 1s ease-out 0.7s forwards;
 }
 
 .phasethree-container {
     position: absolute;
     top: 1200px;
     width: 100%;
+    opacity: 0;
+    animation: aparicionLogo 1s ease-out 0.8s forwards;
 }
 
 .phasefour-container {
     position: absolute;
     top: 1600px;
     width: 100%;
+    opacity: 0;
+    animation: aparicionLogo 1s ease-out 0.9s forwards;
 }
 
 .phasefive-container {
     position: absolute;
     top: 2000px;
     width: 100%;
+    opacity: 0;
+    animation: aparicionLogo 1s ease-out 1s forwards;
 }
 
 .chronology-container {
     position: absolute;
     top: 2400px;
     width: 100%;
+    opacity: 0;
+    animation: aparicionLogo 1s ease-out 1.1s forwards;
 }
 
 .title {
@@ -136,7 +150,7 @@ body {
     transition: transform 0.4s ease;
     overflow-x: scroll;
     padding-left: 48px;
-    padding-right: 4vw;
+    padding-right: 48px;
     scroll-behavior: smooth;
 }
 
@@ -240,7 +254,8 @@ body {
     }
 
     .movies-container {
-        padding-left: 24px;;
+        padding-left: 24px;
+        padding-right: 24px;
     }
 
     .title {
