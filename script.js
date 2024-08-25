@@ -17,15 +17,23 @@ document.addEventListener('DOMContentLoaded', function() {
             updateButtonVisibility(moviesContainer, prevBtn, nextBtn);
         });
 
-        prevBtn.addEventListener('click', function()  {
-            scrollPosition = Math.max(scrollPosition - 800, 0);
+        prevBtn.addEventListener('click', function() {
+            const viewportWidth = window.innerWidth;
+            const scrollAmount = viewportWidth * 0.9;
+        
+            scrollPosition = Math.max(scrollPosition - scrollAmount, 0);
+            
             updateScrollPosition(moviesContainer, scrollPosition);
             updateButtonVisibility(moviesContainer, prevBtn, nextBtn);
         });
-
+        
         nextBtn.addEventListener('click', function() {
+            const viewportWidth = window.innerWidth;
+            const scrollAmount = viewportWidth * 0.9;
+        
             const remainingSpace = moviesContainer.scrollWidth - (scrollPosition + moviesContainer.clientWidth);
-            scrollPosition += Math.min(remainingSpace, 800);
+            scrollPosition += Math.min(remainingSpace, scrollAmount);
+            
             updateScrollPosition(moviesContainer, scrollPosition);
             updateButtonVisibility(moviesContainer, prevBtn, nextBtn);
         });
