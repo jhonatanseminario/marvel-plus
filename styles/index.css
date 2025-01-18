@@ -170,6 +170,7 @@ body {
     padding-right: 48px;
     overflow-x: scroll;
     scroll-behavior: smooth;
+    scrollbar-widht: none;
 
     &::-webkit-scrollbar {
         display: none;
